@@ -13,6 +13,13 @@ Trading Bot for Bitstamp using HTTP API.
 TBA or look at the code ;)
 
 
+## Performance
+Operating since 2020-09-07
+
+```diff
++ 23.00% / + 115.00 EUR
+```
+
 ## Transactions
 All transactions (*updated automatically*)
 
@@ -118,11 +125,4 @@ All transactions (*updated automatically*)
 - 2020-11-26 17:55:31.701000: SELL  -201.03735274 XLM =   26.24945 EUR
 + 2020-11-26 17:05:34.892000: BUY    201.03735274 XLM =  -25.00101 EUR
 
-```
-
-## Performance
-since 7.9.2020
-
-```diff
-+ 23.00% / + 115.00 EUR
 ```
