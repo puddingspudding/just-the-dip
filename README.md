@@ -14,6 +14,7 @@ TBA or look at the code ;)
 
 
 ## Transactions
+All transactions (*updated automatically*)
 
 ```diff
 + 2020-12-18 13:55:59.494000: BUY    195.37727462 XLM =  -28.71655 EUR
@@ -123,5 +124,5 @@ TBA or look at the code ;)
 since 7.9.2020
 
 ```diff
-+ 23.10% / + 115.49 EUR
++ 23.00% / + 115.00 EUR
 ```
