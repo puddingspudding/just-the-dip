@@ -2,7 +2,7 @@
 *Operating since 2020-09-07*
 
 ```diff
-+ 15.80% (*last update* 2020-12-28T00:30:11.620899+01:00[Europe/Berlin])
++ 15.77% (*last update* 2020-12-28T02:30:11.054297+01:00[Europe/Berlin])
 ```
 
 <a href="https://tenor.com/view/sailor-moon-anime-sparkling-eyes-excited-gif-15129235">
