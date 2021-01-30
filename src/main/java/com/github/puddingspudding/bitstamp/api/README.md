@@ -8,8 +8,8 @@
 mvn clean package
 ```
 ### Properties
-| Name | Descritopn | Examples |
-|----- | ---------- | ------- | 
+| Name | Description | Examples |
+|----- | ---------- | ------- |
 | apiKey| Bitsamp api key | 2ad56c2da76ed... |
 | apiSecretKey | Bitstamp api secret key | habcdf570da3fe.... |
 | totalPct | Row 3 Column 2 | 75 |
@@ -21,12 +21,12 @@ mvn clean package
 ### Command
 ```
 java \
-    -jar bot.jar \
     -DapiKey=API_KEY \
     -DapiSecretKey=API_SECRET_KEY \
     -DtotalPct=75 \
     -DstepsPct=5 \
     -DsellPct=5 \
     -Dpair=XLMEUR \
-    -DmaxFiat=500
+    -DmaxFiat=500 \
+    -jar bot.jar
 ```
