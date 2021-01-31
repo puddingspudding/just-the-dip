@@ -18,27 +18,58 @@ public class Test {
 
     public static void main(String[] args) throws Exception {
         String apiKey = System.getProperty("apiKey");
+        if (apiKey == null || apiKey.isEmpty()) {
+            throw new IllegalArgumentException("apiKey has to be provided");
+        }
+
         String apiSecretKey = System.getProperty("apiSecretKey");
+        if (apiSecretKey == null || apiSecretKey.isEmpty()) {
+            throw new IllegalArgumentException("apiSecretKey has to be provided");
+        }
 
-        STRAT_TOTAL_PCT = Integer.parseInt(System.getProperty("totalPct")) / 100.0;
-        STRAT_STEPS_PCT = Integer.parseInt(System.getProperty("stepsPct")) / 100.0;
-        STRAT_SELL_PCT = Integer.parseInt(System.getProperty("sellPct")) / 100.0;
+        String totalPct = System.getProperty("totalPct");
+        if (totalPct == null || totalPct.isEmpty()) {
+            throw new IllegalArgumentException("totalPct has to be provided");
+        }
+        STRAT_TOTAL_PCT = Integer.parseInt(totalPct) / 100.0;
 
-        CurrencyPair currencyPair = CurrencyPair.valueOf(System.getProperty("pair"));
+        String stepsPct = System.getProperty("stepsPct");
+        if (stepsPct == null || stepsPct.isEmpty()) {
+            throw new IllegalArgumentException("stepsPct has to be provided");
+        }
+        STRAT_STEPS_PCT = Integer.parseInt(stepsPct) / 100.0;
 
-        int maxFiatToSpend = Integer.parseInt(System.getProperty("maxFiat"));
+        String sellPct = System.getProperty("sellPct");
+        if (sellPct == null || sellPct.isEmpty()) {
+            throw new IllegalArgumentException("sellPct has to be provided");
+        }
+        STRAT_SELL_PCT = Integer.parseInt(sellPct) / 100.0;
+
+        String pair = System.getProperty("pair");
+        if (pair == null || pair.isEmpty()) {
+            throw new IllegalArgumentException("pair has to be provided");
+        }
+        CurrencyPair currencyPair = CurrencyPair.valueOf(pair);
+
+        String maxFiat = System.getProperty("maxFiat");
+        if (maxFiat == null || maxFiat.isEmpty()) {
+            throw new IllegalArgumentException("maxFiat has to be provided");
+        }
+        int maxFiatToSpend = Integer.parseInt(maxFiat);
 
         Http api = new Http(apiKey, apiSecretKey);
         Ticker ticker = api.getTicker(currencyPair).join();
+
+        System.out.printf("CurrencyPairInfo:\n");
         CurrencyPairInfo currencyPairInfo = api.getCurrencyPairInfo().join()
             .stream()
             .peek(x -> System.out.println(x))
-            .filter(pair -> pair.getSymbol().equals(currencyPair.toName()))
+            .filter(item -> item.getSymbol().equals(currencyPair.toName()))
             .findFirst()
             .orElseThrow();
 
-        System.out.println(ticker);
-        System.out.println(currencyPairInfo);
+        System.out.printf("Ticker: %s\n", ticker);
+        System.out.printf("CurrencyPairInfo: %s\n", currencyPairInfo);
 
         List<Order> orders = api.getOpenOrders(currencyPair).join()
             .stream()
@@ -51,7 +82,7 @@ public class Test {
 
         List<Transaction> transactions = api.getTransactions().join();
 
-        System.out.println(transactions);
+        System.out.printf("Transactions: %s\n", transactions);
 
         Transaction latestTrade = transactions.stream()
             .filter(transaction -> transaction.getType() == Transaction.Type.TRADE.ordinal())
@@ -73,6 +104,8 @@ public class Test {
         if (highestOpenOrder != null && highestOpenOrder.getPrice() > (ticker.getLast() - (ticker.getLast() * STRAT_STEPS_PCT))) {
             System.exit(0);
         }
+
+        System.out.printf("Orders:\n");
         for (Order order : orders) {
             System.out.print(orders);
             api.cancelOrder(order);
@@ -95,8 +128,8 @@ public class Test {
             buyOrder.setPrice(buyPrice);
             buyOrder.setCurrency_pair(currencyPair.toName());
 
-            System.out.println(buyOrder);
-            System.out.println(sellLimit);
+            System.out.printf("BuyOrder: %s\n", buyOrder);
+            System.out.printf("SellLimit: %s\n", sellLimit);
             CompletableFuture<Order> buy = api.buy(
                 buyOrder,
                 sellLimit,
