@@ -10,7 +10,9 @@ public enum CurrencyPair {
 
     XRPEUR,
 
-    LTCEUR;
+    LTCEUR,
+
+    LINKEUR;
 
     public String toName() {
         return this.name().toLowerCase();
