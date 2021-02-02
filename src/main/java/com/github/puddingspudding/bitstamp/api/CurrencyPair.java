@@ -8,7 +8,9 @@ public enum CurrencyPair {
 
     BTCEUR,
 
-    XRPEUR;
+    XRPEUR,
+
+    LTCEUR;
 
     public String toName() {
         return this.name().toLowerCase();
