@@ -2,7 +2,7 @@
 
 
 ```diff
-+ 91.92% (*last update* 2021-02-06T02:30:20.577978+01:00[Europe/Berlin])
++ 90.01% (*last update* 2021-02-06T04:30:18.248379+01:00[Europe/Berlin])
 ```
 
 <a href="https://tenor.com/view/sailor-moon-anime-sparkling-eyes-excited-gif-15129235">
@@ -22,6 +22,8 @@ TBA or look at the code ;)
 All transactions (*updated automatically*)
 
 ```diff
++ 2021-02-06 01:48:11.334000: BUY    210.12815748 XLM =  -59.70792 EUR
++ 2021-02-06 01:33:45.927000: BUY    220.88560042 XLM =  -64.91386 EUR
 - 2021-02-06 00:53:58.163000: SELL  -209.73452591 XLM =   63.07766 EUR
 - 2021-02-06 00:53:58.163000: SELL   -14.10052815 XLM =    4.24073 EUR
 + 2021-02-05 16:56:46.766000: BUY    209.73452591 XLM =  -60.65103 EUR
