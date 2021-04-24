@@ -1,4 +1,6 @@
-package com.github.puddingspudding.bitstamp.api;
+package com.github.puddingspudding.justthedip;
+
+import com.github.puddingspudding.bitstamp.api.*;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -6,15 +8,13 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
-public class Test {
+public class Bot {
 
 
     public static double STRAT_TOTAL_PCT = .75;
     public static double STRAT_STEPS_PCT = .05;
     public static double STRAT_SELL_PCT = 0.05;
-    public static double MIN_ODER_VALUE = 20.0;
 
     public static void main(String[] args) throws Exception {
         String apiKey = System.getProperty("apiKey");
@@ -113,7 +113,7 @@ public class Test {
 
         Balance balance = api.getBalance().join();
         double eurAvailable = Math.min(maxFiatToSpend, balance.getEur_available());
-        double eurPerTrade = Math.max(MIN_ODER_VALUE, eurAvailable / (STRAT_TOTAL_PCT / STRAT_STEPS_PCT));
+        double eurPerTrade = Math.max(Order.MIN_VALUE, eurAvailable / (STRAT_TOTAL_PCT / STRAT_STEPS_PCT));
 
         double last = ticker.getLast();
 

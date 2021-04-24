@@ -46,7 +46,7 @@
                             <archive>
                                 <manifest>
                                     <mainClass>
-                                        com.github.puddingspudding.bitstamp.api.Test
+                                        com.github.puddingspudding.justthedip.Bot
                                     </mainClass>
                                 </manifest>
                             </archive>
