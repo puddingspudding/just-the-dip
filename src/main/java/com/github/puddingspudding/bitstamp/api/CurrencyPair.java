@@ -12,7 +12,13 @@ public enum CurrencyPair {
 
     LTCEUR,
 
-    LINKEUR;
+    LINKEUR,
+
+    AAVEEUR,
+
+    UMAEUR,
+
+    BATEUR;
 
     public String toName() {
         return this.name().toLowerCase();
