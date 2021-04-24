@@ -14,7 +14,7 @@ public class Test {
     public static double STRAT_TOTAL_PCT = .75;
     public static double STRAT_STEPS_PCT = .05;
     public static double STRAT_SELL_PCT = 0.05;
-    public static double MIN_ODER_VALUE = 25.0;
+    public static double MIN_ODER_VALUE = 20.0;
 
     public static void main(String[] args) throws Exception {
         String apiKey = System.getProperty("apiKey");
