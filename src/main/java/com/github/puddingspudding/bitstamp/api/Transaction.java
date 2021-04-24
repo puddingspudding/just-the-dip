@@ -15,7 +15,7 @@ public class Transaction {
     private long id;
     private double eur;
 
-    enum Type {
+    public enum Type {
         DEPOSIT,
         WITHDRAW,
         TRADE,
