@@ -2,9 +2,8 @@
 
 
 ```diff
-+ 135.12% (*last update* 2021-04-25T22:40:25.096651+02:00[Europe/Berlin])
++ 135.12% (*last update* 2021-04-25T22:41:40.904781+02:00[Europe/Berlin])
 ```
-<a href="http://116.203.50.146:4200/">Watch bot LIVE in action<a/>
 
 
 <a href="https://tenor.com/view/sailor-moon-anime-sparkling-eyes-excited-gif-15129235">
