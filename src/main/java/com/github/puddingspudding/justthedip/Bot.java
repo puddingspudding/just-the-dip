@@ -6,6 +6,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Locale;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
@@ -17,6 +18,8 @@ public class Bot {
     public static double STRAT_SELL_PCT = 0.05;
 
     public static void main(String[] args) throws Exception {
+        Locale.setDefault(new Locale("en", "US"));
+        
         String apiKey = System.getProperty("apiKey");
         if (apiKey == null || apiKey.isEmpty()) {
             throw new IllegalArgumentException("apiKey has to be provided");
