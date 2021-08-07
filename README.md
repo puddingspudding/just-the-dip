@@ -2,7 +2,7 @@
 
 
 ```diff
-+ 78.79% (*last update* 2021-08-07T10:30:24.224079+02:00[Europe/Berlin])
++ 80.59% (*last update* 2021-08-07T12:30:24.172131+02:00[Europe/Berlin])
 ```
 
 
@@ -23,6 +23,8 @@ TBA or look at the code ;)
 All transactions (*updated automatically*)
 
 ```diff
+- 2021-08-07 09:27:40.297000: SELL   -14.51481292 XLM =    3.67022 EUR
+- 2021-08-07 09:27:40.297000: SELL   -67.74259354 XLM =   17.12939 EUR
 - 2021-08-07 02:44:31.143000: SELL   -84.23294114 XLM =   20.79964 EUR
 - 2021-08-06 15:58:49.704000: SELL      -1.718E-5 XLM =        0.0 EUR
 - 2021-08-06 15:58:48.768000: SELL   -86.87069141 XLM =   20.80032 EUR
