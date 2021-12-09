@@ -2,7 +2,7 @@
 
 
 ```diff
-+ 110.96% (*last update* 2021-12-09T04:30:25.355598+01:00[Europe/Berlin])
++ 111.09% (*last update* 2021-12-09T06:30:26.495093+01:00[Europe/Berlin])
 ```
 
 
