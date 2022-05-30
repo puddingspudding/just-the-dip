@@ -2,7 +2,7 @@
 
 
 ```diff
-+ 37.32% (*last update* 2022-05-30T04:30:26.239789+02:00[Europe/Berlin])
++ 36.88% (*last update* 2022-05-30T06:30:21.760869+02:00[Europe/Berlin])
 ```
 
 
