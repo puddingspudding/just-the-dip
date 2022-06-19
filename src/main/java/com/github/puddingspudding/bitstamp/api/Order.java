@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 
 public class Order {
 
-    public static double MIN_VALUE = 20.0;
+    public static double MIN_VALUE = 10.0;
 
     private long id;
     private String datetime;
