@@ -2,7 +2,7 @@
 
 
 ```diff
-+ 17.72% (*last update* 2022-06-23T02:30:31.615005+02:00[Europe/Berlin])
++ 17.45% (*last update* 2022-06-23T04:30:27.767697+02:00[Europe/Berlin])
 ```
 
 
@@ -23,6 +23,9 @@ TBA or look at the code ;)
 All transactions (*updated automatically*)
 
 ```diff
+- 2022-06-23 00:52:05.331000: SELL        -1.0E-8 XLM =        0.0 EUR
+- 2022-06-23 00:52:05.272000: SELL       -8.17E-6 XLM =        0.0 EUR
+- 2022-06-23 00:52:05.272000: SELL      -95.09463 XLM =   10.39955 EUR
 + 2022-06-22 08:03:26.848000: BUY         8.18E-6 XLM =       -0.0 EUR
 + 2022-06-22 08:03:26.820000: BUY        95.09463 XLM =  -10.00015 EUR
 + 2022-06-21 20:12:33.465000: BUY     92.79054576 XLM =  -10.00004 EUR
