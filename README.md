@@ -2,7 +2,7 @@
 
 
 ```diff
-+ 36.26% (*last update* 2022-10-07T20:30:20.871606+02:00[Europe/Berlin])
++ 37.94% (*last update* 2022-10-07T22:30:21.031924+02:00[Europe/Berlin])
 ```
 
 
@@ -23,6 +23,7 @@ TBA or look at the code ;)
 All transactions (*updated automatically*)
 
 ```diff
+- 2022-10-07 19:48:11.430000: SELL   -82.16332755 XLM =  10.400234 EUR
 - 2022-10-07 18:06:50.041000: SELL   -83.28003411 XLM = 10.40001066 EUR
 - 2022-10-04 14:30:45.217000: SELL   -85.16610798 XLM = 10.39963345 EUR
 + 2022-10-03 06:56:52.721000: BUY     85.16610798 XLM = -10.0002044 EUR
