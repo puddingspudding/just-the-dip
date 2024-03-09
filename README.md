@@ -2,7 +2,7 @@
 
 
 ```diff
-+ 53.88% (*last update* 2024-03-09T22:30:21.634791+01:00[Europe/Berlin])
++ 54.17% (*last update* 2024-03-09T22:56:03.701375+01:00[Europe/Berlin])
 ```
 
 
@@ -16,8 +16,12 @@ Trading Bot for Bitstamp using HTTP API.
 
 ### Strategy
 
-TBA or look at the code ;)
+1. Delete all limit by orders if the current price is 5% higher than the hightes limit buy order.
+2. Create limit buy order every 5% below current price with OSO (order set order) to sell if price is 2% above buy in
+<img src="chart.png" />
+<img src="orders.png" />
 
+This strategy is an addition to the buy and hold strategy in order to  benefit from volatile movements
 
 ## Transactions
 All transactions (*updated automatically*)
