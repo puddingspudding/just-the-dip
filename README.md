@@ -2,7 +2,7 @@
 
 
 ```diff
-+ 50.80% (*last update* 2024-03-19T00:30:18.817767+01:00[Europe/Berlin])
++ 44.90% (*last update* 2024-03-19T02:30:23.534563+01:00[Europe/Berlin])
 ```
 
 
@@ -27,6 +27,9 @@ This strategy is an addition to the buy and hold strategy in order to  benefit f
 All transactions (*updated automatically*)
 
 ```diff
++ 2024-03-19 01:21:44.418000: BUY     93.57749904 XLM = -10.95792514 EUR
++ 2024-03-19 00:17:33.159000: BUY     94.00197628 XLM =   -11.4156 EUR
+- 2024-03-18 23:35:09.081000: SELL   -93.75908454 XLM = 11.80708152 EUR
 - 2024-03-18 23:13:16.758000: SELL   -93.05771274 XLM = 11.36513846 EUR
 + 2024-03-18 14:09:14.202000: BUY     93.05771274 XLM = -10.92869778 EUR
 -        2024-03-17 17:54:01: SELL   -92.81402447 XLM = 11.33352053 EUR
